@@ -167,3 +167,31 @@ section {
 }
 
 
+.blackout .reveal .state-background,
+.comets .reveal .state-background {
+	background: rgba( 0, 0, 0, 1 );
+}
+
+.reveal pre {
+  margin: 15px 0;
+}
+
+iframe {
+  background-color: #000;
+}
+
+.landscape .reveal .state-background {
+  background: url(../../img/landscape.jpg) no-repeat 50% 50%;
+}
+
+.stately .reveal .state-background {
+  background: #0093E4;
+}
+
+.got .reveal .state-background {
+   background: url(../../img/ironthrone.jpg) no-repeat 50% 50%;
+}
+
+.wind .reveal .state-background {
+  background: url(../../img/wind.jpg) no-repeat 50% 50%;
+}

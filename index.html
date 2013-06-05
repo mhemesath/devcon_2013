@@ -22,6 +22,7 @@
   <!-- If the query includes 'print-pdf', use the PDF print sheet -->
   <script>
    document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+  
   </script>
 
   <!--[if lt IE 9]>
@@ -31,6 +32,7 @@
     
     
     .got-demo {
+      text-shadow: 0 1px 0 #000;
       height: 400px;
     }
     .got-demo i {
@@ -38,9 +40,19 @@
       font-size: 450px;
       top: -20px;
       right: -50px;
-      text-shadow: -1px -1px 3px #000;
       color: #CCC;
     }
+    
+    #htmlBarChart {
+      padding: 0;
+      margin: 20px 0;
+    }
+    
+    #htmlBarChart li {
+      padding-left: 10px;
+      margin: 20px 0;
+    }
+    
     </style>
     
   </head>
@@ -57,9 +69,9 @@
         </section>
       </section>
       <section style="font-size: 1.4em;">
-        <h2 class="fragment highlight-red" data-fragment-index="1">learn standards,</h2>
-        <h2 class="fragment highlight-green" data-fragment-index="2">leverage tools,</h2>
-        <h2 class="fragment highlight-blue" data-fragment-index="3">communicate data</h2>
+        <h2 class="fragment highlight-blue" data-fragment-index="1">communicate data</h2>
+        <h2 class="fragment highlight-red" data-fragment-index="2">learn standards,</h2>
+        <h2 class="fragment highlight-green" data-fragment-index="3">leverage tools,</h2>
         <h2 class="fragment roll-in" style="color: orange" data-fragment-index="4">shiv internet explorer</h2>
       </section>
       <section>
@@ -92,6 +104,7 @@
           <img style="height: 100px; position: relative; bottom: 40px;" src="img/internet_explorer6.png" />
         </section>
         <section style="text-align: center;">
+          http://www.chartservice.com/pie/?v=12,32,53
           <img src="img/jfree.png" />
         </section>
         <section>
@@ -106,18 +119,52 @@
           <img src="img/car_hack.jpg" />
         </section>
         <section>
-          <h1 class="extra-large">Stop hacking libraries</h1>
+          <img src="img/cookie_cutter_homes.jpg" />
         </section>
         <section>
-          <h1 class="extra-large">Start building charts</h1>
+          <img src="img/time-pop-map.jpg" />
+        </section>
+        <section>
+          <img src="img/alisnetwork-1.jpg" />
+        </section>
+        <section data-state="comets">
+          <iframe src="http://bolid.es/" width="800" height="600" ></iframe>
+        </section>
+        <section>
+          <h3>What is a modern data Visualizations</h3>
+        </section>
+        <section>
+          <img src="img/neight.jpg" style="float: left; margin-right: 20px; margin-top: 5px;"> "Modern data visualizations are a conversation with the data."  
+          <br/><span style="color: #666; font-size: 32px;" > Nate Allen - @neight</span>
+        </section>
+        <section>
+          <a href="http://elections.nytimes.com/2012/results/president/scenarios"><img src="img/whitehouse.png"></a>
+        </section>
+        <section>
+          <h1 class="extra-large">Stop hacking chart libraries</h1>
         </section>
       </section>
-      <section>
-        <img src="img/landscape.jpg" />
-        <h3 style="color: #2E580F; font-weight: bold; text-align: center; padding: 50px; position: absolute; top: 50px;">Looked to the browser landscape.</h3>
+      <section data-state="landscape">
+        <h2 style="color: #FFF; text-shadow: 0 0 10px #000;">Look to the browser landscape.</h2>
       </section>
       <section style="text-align: center;">
         <img src="img/landscape_bubble.png" />
+      </section>
+      <section>
+        <h2 style="margin-bottom: 50px;">HTML can draw graphs too!</h2>
+        <ul id="htmlBarChart" style="list-style: none; display: block; width: 100%">
+          <li style="border-left: 500px solid red">500</li>
+          <li style="border-left: 300px solid green">300</li>
+          <li style="border-left: 200px solid blue">700</li>
+        </ul>
+        <pre><code><ul id="htmlBarChart" style="list-style: none; display: block; width: 100%">
+  <li style="border-left: 500px solid red">500</li>
+  <li style="border-left: 300px solid green">300</li>
+  <li style="border-left: 200px solid blue">700</li>
+</ul></code></pre>
+      </section>
+      <section>
+        <a href="http://html5readiness.com/"><img src="img/html5readiness.png" /></a>
       </section>
       <section>
         <section>
@@ -128,45 +175,52 @@
             <li>Easy to implement</li>
           </ul>
         </section>
-        <section class="got-demo">
-          <h3>A Game of Fonts</h3>
-          <h5>Building a font map in 5 steps</h5>
-          <i class="fragment grow icon-casterly-rock" style="color: red;"></i>
-          <i class="fragment grow icon-dorne" style="color: green;"></i>
-          <i class="fragment grow icon-eyrie" style="color: blue;"></i>
-          <i class="fragment grow icon-highgarden" style="color: purple;"></i>
-          <i class="fragment grow icon-kings-landing" style="color: maroon;"></i>
-          <i class="fragment grow icon-riverrun" style="color: aquamarine;"></i>
-          <i class="fragment grow icon-storms-end" style="color: yellow;"></i>
-          <i class="fragment grow icon-the-wall" style="color: gray;"></i>
-          <i class="fragment grow icon-winterfell" style="color: navy;"></i>
+        <section>
+          <h2>Font Awesome</h2>
+          <img src="img/font-awesome.png" />
         </section>
-        <section style="text-align: center;">
-          <h3>Step 1: Find A Map</h3>
+        <section style="text-align: center;" data-state="stately">
+          <img src="img/stately.png"/>
         </section>
-        <section style="text-align: center">
+        <section class="got-demo"  data-state="got">
+          <h3 style="color: #FFF;">A Game of Fonts</h3>
+          <h5 style="color: #FFF;">Building a font map in 5 steps</h5>
+          <i class="fragment grow icon-casterly-rock" style="color: #FFF;"></i>
+          <i class="fragment grow icon-dorne" style="color: #FFF;"></i>
+          <i class="fragment grow icon-eyrie" style="color: #FFF;"></i>
+          <i class="fragment grow icon-highgarden" style="color: #FFF;"></i>
+          <i class="fragment grow icon-kings-landing" style="color: #FFF;"></i>
+          <i class="fragment grow icon-riverrun" style="color: #FFF;"></i>
+          <i class="fragment grow icon-storms-end" style="color: #FFF;"></i>
+          <i class="fragment grow icon-the-wall" style="color: #FFF;"></i>
+          <i class="fragment grow icon-winterfell" style="color: #FFF;"></i>
+        </section>
+        <section style="text-align: center;"  data-state="got">
+          <h3 style="color: #FFF;">Step 1: Find A Map</h3>
+        </section>
+        <section style="text-align: center"  data-state="got">
           <img  src="img/got.png" height="800px">
         </section>
-        <section style="text-align: center">
-          <h3>Step 2: Get a Vector Graphics Editor</h3>
+        <section style="text-align: center"  data-state="got">
+          <h3 style="color: #FFF;">Step 2: Get a Vector Graphics Editor</h3>
         </section>
-        <section style="text-align: center;">
+        <section style="text-align: center;"  data-state="got">
           <img src="img/inkscape_logo.jpg" height="135px" style="margin-right: 200px"/>
           <img src="img/ai_logo.jpg" height="135px" />
         </section>
-        <section>
-          <h3>Step 3: Trace a path around each region.</h3>
+        <section style="text-align: center;" data-state="got">
+          <h3 style="color: #FFF;">Step 3: Trace a path around each region.</h3>
           <img src="img/path.png">
         </section>
-        <section>
-          <h3>Step 4. Export all regions as SVG files.</h3>
+        <section style="text-align: center;" data-state="got">
+          <h3 style="color: #FFF;">Step 4. Export all regions as SVG files.</h3>
           <img src="img/svg_files.png" />
         </section>
-        <section>
-          <h3>Step 5. Convert SVG files into font via fontcustom.</h3>
-          <a href="http://fontcustom.com/">http://fontcustom.com/</a>
+        <section  data-state="got" style="text-align: center;"> 
+          <h3 style="color: #FFF;">Step 5. Convert SVG files into font via fontcustom.</h3>
+          <a style="color: #FFF;" href="http://fontcustom.com/">http://fontcustom.com/</a>
         </section>
-        <section>
+        <section  data-state="got">
           <pre><code data-trim>
 <i class="icon-casterly-rock"></i>
 <i class="icon-dorne"></i>
@@ -179,7 +233,7 @@
 <i class="icon-winterfell"></i>
           </code></pre>
         </section>
-        <section class="got-demo">
+        <section class="got-demo" >
           <img src="img/epic-win.jpg" />
           <i class="icon-casterly-rock" style="color: red;"></i>
           <i class="icon-dorne" style="color: green;"></i>
@@ -196,7 +250,7 @@
         <img src="img/landscape_bubble.png" />
       </section>
       <section>
-        <h3>Vector graphics are great for drawing primitive shapes.</h3>
+        <h3>SVG is great for drawing primitive shapes.</h3>
       </section>
       <section style="text-align: center;">
         <pre><code><circle cx="200" cy="200" r="200" fill="blue"></code></pre>
@@ -205,7 +259,7 @@
         </svg>
       </section>
       <section style="text-align: center;">
-        <pre><code><rect x="0" y="y" height="400" width="400" fill="blue"></code></pre>
+        <pre><code><rect  height="400" width="400" fill="blue"></code></pre>
         <svg height="400" width="400">
           <rect x="0" y="0" height="400" width="400" fill="blue">
         </svg>
@@ -227,6 +281,196 @@
       <section style="text-align: center;">
         <h3 style="margin: 0; position: relative; z-index: 1;">SVG Doesn't Work in IE 7 or 8</h3>
         <img src="img/crying-baby.jpg" style="margin-top: -50px;">
+      </section>
+      <section style="text-align: center;">
+        <h3>So try VML</h3>
+        <img src="img/BabySuspicious.jpg" />
+      </section>
+      <section>
+          &quot;SVG has been in development since 1999 by a group of companies within the W3C after the competing standards Precision Graphics Markup Language (PGML, developed from Adobe's PostScript) and <span style="color: blue;">Vector Markup Language (VML, developed from Microsoft's RTF)</span> were submitted to W3C in 1998&quot;
+      </section>
+      <section style="text-align: center;" data-state="blackout">
+        <img src="img/star-wars-luke-screaming.jpg" />
+      </section>
+      <section style="text-align: center;">
+        <img src="img/Raphael.png"  />
+        <a style="display: block;" href="http://raphaeljs.com/">http://raphaeljs.com/</a>
+      </section>
+      <section>
+        <pre><code class="javascript">// Creates canvas 320 × 200 at 10, 50
+var paper = Raphael(10, 50, 320, 200);
+
+// Creates circle at x = 50, y = 40, with radius 10
+var circle = paper.circle(50, 40, 10);
+// Sets the fill attribute of the circle to red (#f00)
+circle.attr("fill", "#f00");
+
+// Sets the stroke attribute of the circle to white
+circle.attr("stroke", "#fff");</code></pre>
+      </section>
+      <section>
+        <img src="img/knex-pieces.jpg" />
+      </section>
+      <section>
+        <pre><code class="javascript">
+function randomPath(length, j) {
+  var path = "",
+      x = 10,
+      y = 0;
+  dotsy[j] = dotsy[j] || [];
+  for (var i = 0; i < length; i++) {
+      dotsy[j][i] = Math.round(Math.random() * 200);
+      if (i) {
+          x += 20;
+          y = 240 - dotsy[j][i];
+          path += "," + [x, y];
+      } else {
+          path += "M" + [10, (y = 240 - dotsy[j][i])] + "R";
+      }
+  }
+  return path;
+}</code></pre>
+      </section>
+      <section>
+        <h3>Don't describe the <em class="fragment highlight-red">how</em>, describe the <em class="fragment highlight-green">what</em>.</h3>
+      </section>
+      <section style="text-align: center;">
+        <h1 class="extra-large"><span style="color: red;">Imperative</span></h1>
+         <h2>vs.</h2> 
+         <h1 class="extra-large"><span style="color:green;">Declarative</span></h1>
+      </section>
+      <section>
+        Imperative Approach:
+        <pre><code class="javascript">
+var numbers = [1,2,3,4,5]
+var total = 0
+
+for(var i = 0; i < numbers.length; i++) {
+  total += numbers[i]
+}
+console.log(total) //=> 15</code></pre>
+      </section>
+      <section>
+        Declarative Approach:
+        <pre><code class="javascript">
+var numbers = [1,2,3,4,5]
+
+var total = numbers.reduce(function(sum, n) {
+  return sum + n
+});
+console.log(total) //=> 15</code></pre>
+      </section>
+      <section>
+        Declarative programming is powerful in user interfaces, graphics and animations.
+      </section>
+      <section>
+        <h3>Data-Driven Documents</h3>
+        <h5>D3 for short</h5>
+      </section>
+      <section>
+        How to draw:
+        <pre><code class="javascript">for (var i=0; i < data.length; i++) {
+    var circle = document.createElement('circle');
+    circle.cx = area.x(data[i]);
+    circle.cy = area.y(data[i]);
+    circle.r = 5;
+    svg.appendChild(circle);
+}</pre></code>
+      </section>
+      <section>
+        What to draw:
+        <pre><code class="javascript">svg.selectAll('circle').data(data)
+    .enter().append('circle')
+    .attr('cx', area.x())
+    .attr('cy', area.y())
+    .attr('r', 5);
+</pre></code>
+      </section>
+      <section>
+        Drawing a line
+        <div id="simpleline">
+          <svg height="600" width="800">
+            <path stroke="steelblue" stroke-width="5" d="M730,29.761249862471118L723.8633975481611,28.743536142589903L705.4535901926445,18.28033887116294L699.3169877408055,15.694795907140474L693.1803852889667,14.429530201342288L687.0437828371278,41.78127406755419L680.9071803852889,35.49895478050388L662.4973730297723,34.79480690945093L656.3607705779334,26.84013642864994L650.2241681260946,15.342721971613969L644.0875656742556,14.594564858620288L637.9509632224168,30.861480910991304L619.5411558669001,17.053581252062884L613.4045534150613,7.404554956540835L607.2679509632225,5.5176587083287245L601.1313485113835,4.285399933986071L594.9947460595447,0L570.448336252189,1.4027945868632514L564.3117338003502,6.557377049180332L558.1751313485113,3.8012982726372115L552.0385288966725,9.682033226977637L533.6287215411559,20.178237429860246L527.4921190893169,14.506546374738662L521.3555166374781,10.237649906480328L515.2189141856392,11.965012652657038L509.0823117338003,16.090879084607764L490.67250437828375,22.1036417647706L484.5359019264448,20.293761689954863L478.3992994746059,18.555396633293014L472.26269702276704,16.651996919353053L466.12609457092816,19.325558367257088L447.7162872154115,27.868852459016352L441.57968476357263,27.874353614259007L435.4430823117338,25.662889206733382L429.3064798598949,37.479370667840215L423.16987740805604,46.33623060842774L405.01576182136597,50.093519639124224L398.8791593695271,51.842887006271326L392.7425569176882,58.05919243041035L386.6059544658493,58.29574210584218L380.46935201401055,56.700407085487996L362.05954465849385,50.088018483881626L355.92294220665497,50.47860050610626L349.7863397548161,51.59533502035424L343.6497373029772,55.462647155902744L337.5131348511384,60.77126196501263L319.10332749562167,62.61414897128395L312.9667250437828,65.92584442732976L306.83012259194396,67.76873143360109L300.6935201401051,66.77302233469027L276.14711033274955,73.77599295852127L270.01050788091067,73.72648256133789L263.8739054290718,76.22400704147867L257.7373029772329,69.73814501045217L251.60070052539402,73.5119375068764L233.1908931698774,78.56199801958405L227.05429071803852,78.69952690064912L220.9176882661996,87.77093189569808L214.78108581436078,92.08933876113986L208.6444833625219,94.76290020904389L190.23467600700528,97.1228958081197L184.09807355516637,99.63142259874573L177.96147110332748,99.04279898778742L171.8248686514886,98.88326548575199L165.68826619964975,100.79216635493452L147.2784588441331,103.9443283089449L141.14185639229422,105.40213444823414L135.00525394045533,104.2853999339861L128.86865148861645,118.72593244581358L122.73204903677758,114.87512377599296L104.32224168126095,118.78644515348222L98.18563922942205,114.68808449774451L92.04903677758318,113.9399273847508L85.9124343257443,116.36593684673781L61.36602451838879,119.05600176036967L55.2294220665499,118.18681923203872L49.092819614711026,117.548685223897L42.95621716287215,117.16910551215756L36.819614711033275,117.99977995379027L18.409807355516637,117.63120255253605L12.273204903677756,120.03520739355264L6.136602451838878,122.56023764990647L0,123.77599295852127L0,350L6.136602451838878,350L12.273204903677756,350L18.409807355516637,350L36.819614711033275,350L42.95621716287215,350L49.092819614711026,350L55.2294220665499,350L61.36602451838879,350L85.9124343257443,350L92.04903677758318,350L98.18563922942205,350L104.32224168126095,350L122.73204903677758,350L128.86865148861645,350L135.00525394045533,350L141.14185639229422,350L147.2784588441331,350L165.68826619964975,350L171.8248686514886,350L177.96147110332748,350L184.09807355516637,350L190.23467600700528,350L208.6444833625219,350L214.78108581436078,350L220.9176882661996,350L227.05429071803852,350L233.1908931698774,350L251.60070052539402,350L257.7373029772329,350L263.8739054290718,350L270.01050788091067,350L276.14711033274955,350L300.6935201401051,350L306.83012259194396,350L312.9667250437828,350L319.10332749562167,350L337.5131348511384,350L343.6497373029772,350L349.7863397548161,350L355.92294220665497,350L362.05954465849385,350L380.46935201401055,350L386.6059544658493,350L392.7425569176882,350L398.8791593695271,350L405.01576182136597,350L423.16987740805604,350L429.3064798598949,350L435.4430823117338,350L441.57968476357263,350L447.7162872154115,350L466.12609457092816,350L472.26269702276704,350L478.3992994746059,350L484.5359019264448,350L490.67250437828375,350L509.0823117338003,350L515.2189141856392,350L521.3555166374781,350L527.4921190893169,350L533.6287215411559,350L552.0385288966725,350L558.1751313485113,350L564.3117338003502,350L570.448336252189,350L594.9947460595447,350L601.1313485113835,350L607.2679509632225,350L613.4045534150613,350L619.5411558669001,350L637.9509632224168,350L644.0875656742556,350L650.2241681260946,350L656.3607705779334,350L662.4973730297723,350L680.9071803852889,350L687.0437828371278,350L693.1803852889667,350L699.3169877408055,350L705.4535901926445,350L723.8633975481611,350L730,350Z" fill="none" stroke="#000" stroke-width="1" />
+          </svg>
+        </div>
+      </section>
+      <section>
+        Define a scale
+        <pre><code class="javascript">
+var y = d3.scale.linear()
+    .range([height, 0])
+    .domain([min, max]);
+        </code></pre>
+      </section>
+      <section>
+        Define a layout
+        <pre><code class="javascript">
+var data = [{x: 0, y: 5}, {x: 1, y: 3}, {x: 2, y: 10}]
+var area = d3.svg.area()
+    .x(function(d) { return x(d.x); })
+    .y0(height)
+    .y1(function(d) { return y(d.y); });
+        </code></pre>
+      </section>
+      <section>
+        Render!
+        <pre><code class="javascript">
+svg.append('path').datum(data).attr('d', area);
+        </code></pre>
+      </section>
+      <section>
+        <h1>D3 does more!</h1>
+        DOM Selections, DOM Events, Transitions, Arrays, Math, XHR, Formatters, Colors, 
+        Scales, Ordinals, Shapes, Axes, Controls, Bundles, Chords, Clusters, Force Graphcs, 
+        Hierarchy, Histogram, Pack, Partition, Pie, Stack, Tree, Treemap, Geography, Projections,
+        Streams, Dragging and Zooming
+      </section>
+      <section>
+        <h1>Want more?</h1>
+        <p>Check out the examples <a href="http://bl.ocks.org/mbostock">http://bl.ocks.org/mbostock</a></p>
+      </section>
+      <section style="text-align: center;">
+        <h3 style="margin: 0; position: relative; z-index: 1;">D3 Doesn't Work in IE 7 or 8</h3>
+        <img src="img/crying-baby.jpg" style="margin-top: -50px;">
+      </section>
+      <section>
+        <img src="img/Y-U-NO.png">
+      </section>
+      <section>
+        <p>D3 is awesome because its built on modern standards:</p>
+        <ul style="font-size: 50px; line-height: 80px;">
+          <li>ECMAScript 5 <span class="fragment roll-in" style="color: green;" data-fragment-index="1"> -  es5-shim.js</span></li>
+          <li>JSON <span class="fragment roll-in" style="color: blue;" data-fragment-index="2"> -  json3.js</span></li>
+          <li>SVG  <span class="fragment roll-in" style="color: purple;" data-fragment-index="3"> -  raphael.js</span></li>
+          <li>DOM Selection API  <span class="fragment roll-in" style="color: orange;" data-fragment-index="4"> -  sizzle.js</span></li>
+        </ul>
+      </section>
+      <section>
+        <h3>R2D3 is a customized build of D3 powered by RaphaelJS</h3>
+        <pre><code class="javascript">
+<!--[if lte IE 8]><script src="r2d3.js" charset="utf-8"></script><![endif]-->
+<!--[if gte IE 9]><!-->
+&lt;script src="d3.js"&gt;&lt;/script&gt;
+<!--<![endif]-->
+        </code></pre>
+        <a href="https://github.com/mhemesath/r2d3/">https://github.com/mhemesath/r2d3/</a>
+      </section>
+      <section style="text-align: center;">
+        <img src="img/slowscript.gif" width="500px">
+        <ul style="margin: 20px 0 0 100px; line-height: 60px;">
+          <li>Give IE a break</li>
+          <li>Limit elements to ~ 1000 per/page</li>
+          <li>Avoid transitions</li>
+        </ul>
+      </section>
+      <section>
+        <h3>D3 at Cerner</h3>
+        <a href="http://github.cerner.com/PHAppInfra/senzu">http://github.cerner.com/PHAppInfra/senzu</a>
+      </section>
+      <section  data-state="wind">
+        <h1 style="color: #FFF; font-weight: normal; text-shadow: 0 0 10px #000; position: absolute; top: 50px; width: 100%; text-align: center;">
+          Build for the future
+        </h1>
       </section>
     </div>
   </div>
@@ -259,6 +503,8 @@
         // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
       ]
     });
+  
+
   </script>
   </body>
 </html>

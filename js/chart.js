@@ -69,3 +69,4 @@ d3.tsv("data.tsv", function(error, data) {
       .style("text-anchor", "end")
       .text("Price ($)");
 });
+
